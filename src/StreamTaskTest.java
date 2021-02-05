@@ -9,18 +9,26 @@ public class StreamTaskTest {
     public static Object[][] numbers() {
         return new Object[][]{
                 {
-                        new int[]{1, 2, 3, 4, 5},
+                        new int[]{1, 2, 3, 4, 5},//2*2+4*4
                         20
                 },
                 {
-                        new int[]{-5, -4, 11, 6, 5},
+                        new int[]{-5, -4, 11, 6, 5},//-4*-4 + 6*6
                         52
                 },
                 {
-                        new int[]{13, -2, 33, -4, 5},
+                        new int[]{13, -2, 33, -4, 5},//2*2 + -4*-4
                         20
+                },
+                {
+                        new int[]{-1, 1, -1, 1, -1},//my test
+                        0
+                },
+                {
+                        new int[]{0, 0, 0, 0, 0},//my test
+                        0
                 }
-                // TODO add 2 more test data here
+
         };
     }
 
@@ -38,8 +46,16 @@ public class StreamTaskTest {
                 {
                         new int[]{130, -200, 330, -40, 50, 66},
                         new int[]{}
+                },
+                {
+                        new int[]{1, 1, 1, 1, 1, 1},//my test
+                        new int[]{1, 1, 1, 1, 1, 1}
+                },
+                {
+                        new int[]{0, 0, 0, 0, 0, 0},//my test
+                        new int[]{}
                 }
-                // TODO add 2 more test data here
+
         };
     }
 
